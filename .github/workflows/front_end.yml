@@ -19,7 +19,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.24.0"
+          flutter-version: "3.35.4"
 
       - name: Install dependencies
         run: flutter pub get
@@ -38,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-apk
-          path: frontend/build/app/outputs/flutter-apk/app-release.apk
+          path: front_end/build/app/outputs/flutter-apk/app-release.apk
